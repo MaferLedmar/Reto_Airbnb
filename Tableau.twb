@@ -1,0 +1,1972 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0611.0332                               -->
+<workbook original-version='18.1' source-build='2021.4.8 (20214.22.0611.0332)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='RioClean (2)' inline='true' name='federated.0o17j1n171tmkz101dsua04j9km5' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='RioClean' name='textscan.0mxmhoc14s49jg158mo810r29pjz'>
+            <connection class='textscan' directory='C:/Users/mafer/Documents/Gestión de Plataformas/Reto_Airbnb-1' filename='RioClean.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='MexCityclean' name='textscan.05kkt8k1v5ttx818pdc411q77o9l'>
+            <connection class='textscan' directory='C:/Users/mafer/Documents/Gestión de Plataformas/Reto_Airbnb-1' filename='MexCityclean.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0mxmhoc14s49jg158mo810r29pjz' name='RioClean.csv' table='[RioClean#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='source' ordinal='1' />
+            <column datatype='string' name='name' ordinal='2' />
+            <column datatype='integer' name='host_id' ordinal='3' />
+            <column datatype='string' name='host_response_time' ordinal='4' />
+            <column datatype='string' name='host_response_rate' ordinal='5' />
+            <column datatype='string' name='host_acceptance_rate' ordinal='6' />
+            <column datatype='integer' name='host_is_superhost' ordinal='7' />
+            <column datatype='real' name='host_listings_count' ordinal='8' />
+            <column datatype='real' name='host_total_listings_count' ordinal='9' />
+            <column datatype='integer' name='host_identity_verified' ordinal='10' />
+            <column datatype='string' name='neighbourhood' ordinal='11' />
+            <column datatype='string' name='neighbourhood_cleansed' ordinal='12' />
+            <column datatype='real' name='latitude' ordinal='13' />
+            <column datatype='real' name='longitude' ordinal='14' />
+            <column datatype='string' name='property_type' ordinal='15' />
+            <column datatype='string' name='room_type' ordinal='16' />
+            <column datatype='real' name='accommodates' ordinal='17' />
+            <column datatype='string' name='bathrooms_text' ordinal='18' />
+            <column datatype='real' name='bedrooms' ordinal='19' />
+            <column datatype='real' name='beds' ordinal='20' />
+            <column datatype='string' name='Ame1' ordinal='21' />
+            <column datatype='string' name='Ame2' ordinal='22' />
+            <column datatype='string' name='Ame3' ordinal='23' />
+            <column datatype='string' name='Ame4' ordinal='24' />
+            <column datatype='string' name='Ame5' ordinal='25' />
+            <column datatype='real' name='price' ordinal='26' />
+            <column datatype='real' name='minimum_nights' ordinal='27' />
+            <column datatype='real' name='maximum_nights' ordinal='28' />
+            <column datatype='real' name='number_of_reviews' ordinal='29' />
+            <column datatype='real' name='number_of_reviews_lastyear' ordinal='30' />
+            <column datatype='real' name='number_of_reviews_last30' ordinal='31' />
+            <column datatype='real' name='review_scores_rating' ordinal='32' />
+            <column datatype='real' name='review_scores_accuracy' ordinal='33' />
+            <column datatype='real' name='review_scores_cleanliness' ordinal='34' />
+            <column datatype='real' name='review_scores_checkin' ordinal='35' />
+            <column datatype='real' name='review_scores_communication' ordinal='36' />
+            <column datatype='real' name='review_scores_location' ordinal='37' />
+            <column datatype='real' name='review_scores_value' ordinal='38' />
+            <column datatype='integer' name='instant_bookable' ordinal='39' />
+            <column datatype='real' name='calculated_host_listings_count' ordinal='40' />
+            <column datatype='real' name='calculated_host_listings_count_entire_homes' ordinal='41' />
+            <column datatype='real' name='calculated_host_listings_count_private_rooms' ordinal='42' />
+            <column datatype='real' name='calculated_host_listings_count_shared_rooms' ordinal='43' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0mxmhoc14s49jg158mo810r29pjz' name='RioClean.csv' table='[RioClean#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='source' ordinal='1' />
+            <column datatype='string' name='name' ordinal='2' />
+            <column datatype='integer' name='host_id' ordinal='3' />
+            <column datatype='string' name='host_response_time' ordinal='4' />
+            <column datatype='string' name='host_response_rate' ordinal='5' />
+            <column datatype='string' name='host_acceptance_rate' ordinal='6' />
+            <column datatype='integer' name='host_is_superhost' ordinal='7' />
+            <column datatype='real' name='host_listings_count' ordinal='8' />
+            <column datatype='real' name='host_total_listings_count' ordinal='9' />
+            <column datatype='integer' name='host_identity_verified' ordinal='10' />
+            <column datatype='string' name='neighbourhood' ordinal='11' />
+            <column datatype='string' name='neighbourhood_cleansed' ordinal='12' />
+            <column datatype='real' name='latitude' ordinal='13' />
+            <column datatype='real' name='longitude' ordinal='14' />
+            <column datatype='string' name='property_type' ordinal='15' />
+            <column datatype='string' name='room_type' ordinal='16' />
+            <column datatype='real' name='accommodates' ordinal='17' />
+            <column datatype='string' name='bathrooms_text' ordinal='18' />
+            <column datatype='real' name='bedrooms' ordinal='19' />
+            <column datatype='real' name='beds' ordinal='20' />
+            <column datatype='string' name='Ame1' ordinal='21' />
+            <column datatype='string' name='Ame2' ordinal='22' />
+            <column datatype='string' name='Ame3' ordinal='23' />
+            <column datatype='string' name='Ame4' ordinal='24' />
+            <column datatype='string' name='Ame5' ordinal='25' />
+            <column datatype='real' name='price' ordinal='26' />
+            <column datatype='real' name='minimum_nights' ordinal='27' />
+            <column datatype='real' name='maximum_nights' ordinal='28' />
+            <column datatype='real' name='number_of_reviews' ordinal='29' />
+            <column datatype='real' name='number_of_reviews_lastyear' ordinal='30' />
+            <column datatype='real' name='number_of_reviews_last30' ordinal='31' />
+            <column datatype='real' name='review_scores_rating' ordinal='32' />
+            <column datatype='real' name='review_scores_accuracy' ordinal='33' />
+            <column datatype='real' name='review_scores_cleanliness' ordinal='34' />
+            <column datatype='real' name='review_scores_checkin' ordinal='35' />
+            <column datatype='real' name='review_scores_communication' ordinal='36' />
+            <column datatype='real' name='review_scores_location' ordinal='37' />
+            <column datatype='real' name='review_scores_value' ordinal='38' />
+            <column datatype='integer' name='instant_bookable' ordinal='39' />
+            <column datatype='real' name='calculated_host_listings_count' ordinal='40' />
+            <column datatype='real' name='calculated_host_listings_count_entire_homes' ordinal='41' />
+            <column datatype='real' name='calculated_host_listings_count_private_rooms' ordinal='42' />
+            <column datatype='real' name='calculated_host_listings_count_shared_rooms' ordinal='43' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_MX&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[source]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>source</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>host_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[host_id]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>host_id</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>host_response_time</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[host_response_time]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>host_response_time</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>host_response_rate</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[host_response_rate]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>host_response_rate</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>host_acceptance_rate</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[host_acceptance_rate]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>host_acceptance_rate</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>host_is_superhost</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[host_is_superhost]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>host_is_superhost</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>host_listings_count</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[host_listings_count]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>host_listings_count</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>host_total_listings_count</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[host_total_listings_count]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>host_total_listings_count</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>host_identity_verified</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[host_identity_verified]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>host_identity_verified</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>neighbourhood</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[neighbourhood]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>neighbourhood</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>neighbourhood_cleansed</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[neighbourhood_cleansed]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>neighbourhood_cleansed</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>property_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[property_type]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>property_type</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>room_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[room_type]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>room_type</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>accommodates</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[accommodates]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>accommodates</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bathrooms_text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[bathrooms_text]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>bathrooms_text</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bedrooms</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bedrooms]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>bedrooms</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>beds</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[beds]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>beds</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ame1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Ame1]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>Ame1</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ame2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Ame2]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>Ame2</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ame3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Ame3]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>Ame3</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ame4</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Ame4]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>Ame4</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ame5</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Ame5]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>Ame5</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[price]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minimum_nights</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[minimum_nights]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>minimum_nights</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>maximum_nights</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[maximum_nights]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>maximum_nights</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_of_reviews</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[number_of_reviews]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>number_of_reviews</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_of_reviews_lastyear</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[number_of_reviews_lastyear]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>number_of_reviews_lastyear</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_of_reviews_last30</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[number_of_reviews_last30]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>number_of_reviews_last30</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_scores_rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[review_scores_rating]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>review_scores_rating</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_scores_accuracy</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[review_scores_accuracy]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>review_scores_accuracy</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_scores_cleanliness</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[review_scores_cleanliness]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>review_scores_cleanliness</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_scores_checkin</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[review_scores_checkin]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>review_scores_checkin</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_scores_communication</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[review_scores_communication]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>review_scores_communication</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_scores_location</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[review_scores_location]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>review_scores_location</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_scores_value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[review_scores_value]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>review_scores_value</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>instant_bookable</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[instant_bookable]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>instant_bookable</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calculated_host_listings_count</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[calculated_host_listings_count]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>calculated_host_listings_count</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calculated_host_listings_count_entire_homes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[calculated_host_listings_count_entire_homes]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>calculated_host_listings_count_entire_homes</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calculated_host_listings_count_private_rooms</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[calculated_host_listings_count_private_rooms]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>calculated_host_listings_count_private_rooms</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calculated_host_listings_count_shared_rooms</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[calculated_host_listings_count_shared_rooms]</local-name>
+            <parent-name>[RioClean.csv]</parent-name>
+            <remote-alias>calculated_host_listings_count_shared_rooms</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='RioClean.csv' datatype='table' name='[__tableau_internal_object_id__].[RioClean.csv_943C17593BD54694BE1A732A8D1B937A]' role='measure' type='quantitative' />
+      <column caption='Accommodates' datatype='real' name='[accommodates]' role='measure' type='quantitative' />
+      <column caption='Bathrooms Text' datatype='string' name='[bathrooms_text]' role='dimension' type='nominal' />
+      <column caption='Bedrooms' datatype='real' name='[bedrooms]' role='measure' type='quantitative' />
+      <column caption='Beds' datatype='real' name='[beds]' role='measure' type='quantitative' />
+      <column caption='Calculated Host Listings Count' datatype='real' name='[calculated_host_listings_count]' role='measure' type='quantitative' />
+      <column caption='Calculated Host Listings Count Entire Homes' datatype='real' name='[calculated_host_listings_count_entire_homes]' role='measure' type='quantitative' />
+      <column caption='Calculated Host Listings Count Private Rooms' datatype='real' name='[calculated_host_listings_count_private_rooms]' role='measure' type='quantitative' />
+      <column caption='Calculated Host Listings Count Shared Rooms' datatype='real' name='[calculated_host_listings_count_shared_rooms]' role='measure' type='quantitative' />
+      <column caption='Host Acceptance Rate' datatype='string' name='[host_acceptance_rate]' role='dimension' type='nominal' />
+      <column caption='Host Id' datatype='integer' name='[host_id]' role='dimension' type='ordinal' />
+      <column caption='Host Identity Verified' datatype='integer' name='[host_identity_verified]' role='measure' type='quantitative' />
+      <column caption='Host Is Superhost' datatype='integer' name='[host_is_superhost]' role='measure' type='quantitative' />
+      <column caption='Host Listings Count' datatype='real' name='[host_listings_count]' role='measure' type='quantitative' />
+      <column caption='Host Response Rate' datatype='string' name='[host_response_rate]' role='dimension' type='nominal' />
+      <column caption='Host Response Time' datatype='string' name='[host_response_time]' role='dimension' type='nominal' />
+      <column caption='Host Total Listings Count' datatype='real' name='[host_total_listings_count]' role='measure' type='quantitative' />
+      <column caption='Instant Bookable' datatype='integer' name='[instant_bookable]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Maximum Nights' datatype='real' name='[maximum_nights]' role='measure' type='quantitative' />
+      <column caption='Minimum Nights' datatype='real' name='[minimum_nights]' role='measure' type='quantitative' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+      <column caption='Neighbourhood Cleansed' datatype='string' name='[neighbourhood_cleansed]' role='dimension' type='nominal' />
+      <column caption='Number Of Reviews' datatype='real' name='[number_of_reviews]' role='measure' type='quantitative' />
+      <column caption='Number Of Reviews Last30' datatype='real' name='[number_of_reviews_last30]' role='measure' type='quantitative' />
+      <column caption='Number Of Reviews Lastyear' datatype='real' name='[number_of_reviews_lastyear]' role='measure' type='quantitative' />
+      <column caption='Price' datatype='real' name='[price]' role='measure' type='quantitative' />
+      <column caption='Property Type' datatype='string' name='[property_type]' role='dimension' type='nominal' />
+      <column caption='Review Scores Accuracy' datatype='real' name='[review_scores_accuracy]' role='measure' type='quantitative' />
+      <column caption='Review Scores Checkin' datatype='real' name='[review_scores_checkin]' role='measure' type='quantitative' />
+      <column caption='Review Scores Cleanliness' datatype='real' name='[review_scores_cleanliness]' role='measure' type='quantitative' />
+      <column caption='Review Scores Communication' datatype='real' name='[review_scores_communication]' role='measure' type='quantitative' />
+      <column caption='Review Scores Location' datatype='real' name='[review_scores_location]' role='measure' type='quantitative' />
+      <column caption='Review Scores Rating' datatype='real' name='[review_scores_rating]' role='measure' type='quantitative' />
+      <column caption='Review Scores Value' datatype='real' name='[review_scores_value]' role='measure' type='quantitative' />
+      <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+      <column caption='Source' datatype='string' name='[source]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Estados Unidos Mexicanos&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='RioClean.csv' id='RioClean.csv_943C17593BD54694BE1A732A8D1B937A'>
+            <properties context=''>
+              <relation connection='textscan.0mxmhoc14s49jg158mo810r29pjz' name='RioClean.csv' table='[RioClean#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='source' ordinal='1' />
+                  <column datatype='string' name='name' ordinal='2' />
+                  <column datatype='integer' name='host_id' ordinal='3' />
+                  <column datatype='string' name='host_response_time' ordinal='4' />
+                  <column datatype='string' name='host_response_rate' ordinal='5' />
+                  <column datatype='string' name='host_acceptance_rate' ordinal='6' />
+                  <column datatype='integer' name='host_is_superhost' ordinal='7' />
+                  <column datatype='real' name='host_listings_count' ordinal='8' />
+                  <column datatype='real' name='host_total_listings_count' ordinal='9' />
+                  <column datatype='integer' name='host_identity_verified' ordinal='10' />
+                  <column datatype='string' name='neighbourhood' ordinal='11' />
+                  <column datatype='string' name='neighbourhood_cleansed' ordinal='12' />
+                  <column datatype='real' name='latitude' ordinal='13' />
+                  <column datatype='real' name='longitude' ordinal='14' />
+                  <column datatype='string' name='property_type' ordinal='15' />
+                  <column datatype='string' name='room_type' ordinal='16' />
+                  <column datatype='real' name='accommodates' ordinal='17' />
+                  <column datatype='string' name='bathrooms_text' ordinal='18' />
+                  <column datatype='real' name='bedrooms' ordinal='19' />
+                  <column datatype='real' name='beds' ordinal='20' />
+                  <column datatype='string' name='Ame1' ordinal='21' />
+                  <column datatype='string' name='Ame2' ordinal='22' />
+                  <column datatype='string' name='Ame3' ordinal='23' />
+                  <column datatype='string' name='Ame4' ordinal='24' />
+                  <column datatype='string' name='Ame5' ordinal='25' />
+                  <column datatype='real' name='price' ordinal='26' />
+                  <column datatype='real' name='minimum_nights' ordinal='27' />
+                  <column datatype='real' name='maximum_nights' ordinal='28' />
+                  <column datatype='real' name='number_of_reviews' ordinal='29' />
+                  <column datatype='real' name='number_of_reviews_lastyear' ordinal='30' />
+                  <column datatype='real' name='number_of_reviews_last30' ordinal='31' />
+                  <column datatype='real' name='review_scores_rating' ordinal='32' />
+                  <column datatype='real' name='review_scores_accuracy' ordinal='33' />
+                  <column datatype='real' name='review_scores_cleanliness' ordinal='34' />
+                  <column datatype='real' name='review_scores_checkin' ordinal='35' />
+                  <column datatype='real' name='review_scores_communication' ordinal='36' />
+                  <column datatype='real' name='review_scores_location' ordinal='37' />
+                  <column datatype='real' name='review_scores_value' ordinal='38' />
+                  <column datatype='integer' name='instant_bookable' ordinal='39' />
+                  <column datatype='real' name='calculated_host_listings_count' ordinal='40' />
+                  <column datatype='real' name='calculated_host_listings_count_entire_homes' ordinal='41' />
+                  <column datatype='real' name='calculated_host_listings_count_private_rooms' ordinal='42' />
+                  <column datatype='real' name='calculated_host_listings_count_shared_rooms' ordinal='43' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='MexCityclean' inline='true' name='federated.02wfgdf0y7xuk2156890u1wdpwwl' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='MexCityclean' name='textscan.1timizv04y8w7v12klmb31976aym'>
+            <connection class='textscan' directory='C:/Users/mafer/Documents/Gestión de Plataformas/Reto_Airbnb-1' filename='MexCityclean.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1timizv04y8w7v12klmb31976aym' name='MexCityclean.csv' table='[MexCityclean#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='source' ordinal='1' />
+            <column datatype='string' name='name' ordinal='2' />
+            <column datatype='integer' name='host_id' ordinal='3' />
+            <column datatype='string' name='host_response_time' ordinal='4' />
+            <column datatype='string' name='host_response_rate' ordinal='5' />
+            <column datatype='string' name='host_acceptance_rate' ordinal='6' />
+            <column datatype='integer' name='host_is_superhost' ordinal='7' />
+            <column datatype='integer' name='host_listings_count' ordinal='8' />
+            <column datatype='integer' name='host_total_listings_count' ordinal='9' />
+            <column datatype='integer' name='host_identity_verified' ordinal='10' />
+            <column datatype='string' name='neighbourhood' ordinal='11' />
+            <column datatype='string' name='neighbourhood_cleansed' ordinal='12' />
+            <column datatype='real' name='latitude' ordinal='13' />
+            <column datatype='real' name='longitude' ordinal='14' />
+            <column datatype='string' name='property_type' ordinal='15' />
+            <column datatype='string' name='room_type' ordinal='16' />
+            <column datatype='integer' name='accommodates' ordinal='17' />
+            <column datatype='string' name='bathrooms_text' ordinal='18' />
+            <column datatype='real' name='bedrooms' ordinal='19' />
+            <column datatype='real' name='beds' ordinal='20' />
+            <column datatype='string' name='ame1' ordinal='21' />
+            <column datatype='string' name='ame2' ordinal='22' />
+            <column datatype='string' name='ame3' ordinal='23' />
+            <column datatype='string' name='ame4' ordinal='24' />
+            <column datatype='string' name='ame5' ordinal='25' />
+            <column datatype='integer' name='price' ordinal='26' />
+            <column datatype='integer' name='minimum_nights' ordinal='27' />
+            <column datatype='integer' name='maximum_nights' ordinal='28' />
+            <column datatype='integer' name='number_of_reviews' ordinal='29' />
+            <column datatype='real' name='review_scores_rating' ordinal='30' />
+            <column datatype='real' name='review_scores_accuracy' ordinal='31' />
+            <column datatype='real' name='review_scores_cleanliness' ordinal='32' />
+            <column datatype='real' name='review_scores_checkin' ordinal='33' />
+            <column datatype='real' name='review_scores_communication' ordinal='34' />
+            <column datatype='real' name='review_scores_location' ordinal='35' />
+            <column datatype='real' name='review_scores_value' ordinal='36' />
+            <column datatype='integer' name='instant_bookable' ordinal='37' />
+            <column datatype='integer' name='calculated_host_listings_count' ordinal='38' />
+            <column datatype='integer' name='calculated_host_listings_count_entire_homes' ordinal='39' />
+            <column datatype='integer' name='calculated_host_listings_count_private_rooms' ordinal='40' />
+            <column datatype='integer' name='calculated_host_listings_count_shared_rooms' ordinal='41' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1timizv04y8w7v12klmb31976aym' name='MexCityclean.csv' table='[MexCityclean#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='source' ordinal='1' />
+            <column datatype='string' name='name' ordinal='2' />
+            <column datatype='integer' name='host_id' ordinal='3' />
+            <column datatype='string' name='host_response_time' ordinal='4' />
+            <column datatype='string' name='host_response_rate' ordinal='5' />
+            <column datatype='string' name='host_acceptance_rate' ordinal='6' />
+            <column datatype='integer' name='host_is_superhost' ordinal='7' />
+            <column datatype='integer' name='host_listings_count' ordinal='8' />
+            <column datatype='integer' name='host_total_listings_count' ordinal='9' />
+            <column datatype='integer' name='host_identity_verified' ordinal='10' />
+            <column datatype='string' name='neighbourhood' ordinal='11' />
+            <column datatype='string' name='neighbourhood_cleansed' ordinal='12' />
+            <column datatype='real' name='latitude' ordinal='13' />
+            <column datatype='real' name='longitude' ordinal='14' />
+            <column datatype='string' name='property_type' ordinal='15' />
+            <column datatype='string' name='room_type' ordinal='16' />
+            <column datatype='integer' name='accommodates' ordinal='17' />
+            <column datatype='string' name='bathrooms_text' ordinal='18' />
+            <column datatype='real' name='bedrooms' ordinal='19' />
+            <column datatype='real' name='beds' ordinal='20' />
+            <column datatype='string' name='ame1' ordinal='21' />
+            <column datatype='string' name='ame2' ordinal='22' />
+            <column datatype='string' name='ame3' ordinal='23' />
+            <column datatype='string' name='ame4' ordinal='24' />
+            <column datatype='string' name='ame5' ordinal='25' />
+            <column datatype='integer' name='price' ordinal='26' />
+            <column datatype='integer' name='minimum_nights' ordinal='27' />
+            <column datatype='integer' name='maximum_nights' ordinal='28' />
+            <column datatype='integer' name='number_of_reviews' ordinal='29' />
+            <column datatype='real' name='review_scores_rating' ordinal='30' />
+            <column datatype='real' name='review_scores_accuracy' ordinal='31' />
+            <column datatype='real' name='review_scores_cleanliness' ordinal='32' />
+            <column datatype='real' name='review_scores_checkin' ordinal='33' />
+            <column datatype='real' name='review_scores_communication' ordinal='34' />
+            <column datatype='real' name='review_scores_location' ordinal='35' />
+            <column datatype='real' name='review_scores_value' ordinal='36' />
+            <column datatype='integer' name='instant_bookable' ordinal='37' />
+            <column datatype='integer' name='calculated_host_listings_count' ordinal='38' />
+            <column datatype='integer' name='calculated_host_listings_count_entire_homes' ordinal='39' />
+            <column datatype='integer' name='calculated_host_listings_count_private_rooms' ordinal='40' />
+            <column datatype='integer' name='calculated_host_listings_count_shared_rooms' ordinal='41' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_MX&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[source]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>source</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>host_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[host_id]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>host_id</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>host_response_time</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[host_response_time]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>host_response_time</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>host_response_rate</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[host_response_rate]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>host_response_rate</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>host_acceptance_rate</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[host_acceptance_rate]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>host_acceptance_rate</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>host_is_superhost</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[host_is_superhost]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>host_is_superhost</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>host_listings_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[host_listings_count]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>host_listings_count</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>host_total_listings_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[host_total_listings_count]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>host_total_listings_count</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>host_identity_verified</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[host_identity_verified]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>host_identity_verified</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>neighbourhood</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[neighbourhood]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>neighbourhood</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>neighbourhood_cleansed</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[neighbourhood_cleansed]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>neighbourhood_cleansed</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>property_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[property_type]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>property_type</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>room_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[room_type]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>room_type</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>accommodates</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[accommodates]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>accommodates</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bathrooms_text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[bathrooms_text]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>bathrooms_text</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bedrooms</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bedrooms]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>bedrooms</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>beds</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[beds]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>beds</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ame1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ame1]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>ame1</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ame2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ame2]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>ame2</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ame3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ame3]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>ame3</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ame4</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ame4]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>ame4</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ame5</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ame5]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>ame5</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[price]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minimum_nights</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[minimum_nights]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>minimum_nights</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>maximum_nights</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[maximum_nights]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>maximum_nights</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_of_reviews</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[number_of_reviews]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>number_of_reviews</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_scores_rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[review_scores_rating]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>review_scores_rating</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_scores_accuracy</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[review_scores_accuracy]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>review_scores_accuracy</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_scores_cleanliness</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[review_scores_cleanliness]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>review_scores_cleanliness</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_scores_checkin</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[review_scores_checkin]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>review_scores_checkin</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_scores_communication</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[review_scores_communication]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>review_scores_communication</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_scores_location</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[review_scores_location]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>review_scores_location</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_scores_value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[review_scores_value]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>review_scores_value</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>instant_bookable</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[instant_bookable]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>instant_bookable</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calculated_host_listings_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calculated_host_listings_count]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>calculated_host_listings_count</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calculated_host_listings_count_entire_homes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calculated_host_listings_count_entire_homes]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>calculated_host_listings_count_entire_homes</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calculated_host_listings_count_private_rooms</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calculated_host_listings_count_private_rooms]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>calculated_host_listings_count_private_rooms</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calculated_host_listings_count_shared_rooms</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calculated_host_listings_count_shared_rooms]</local-name>
+            <parent-name>[MexCityclean.csv]</parent-name>
+            <remote-alias>calculated_host_listings_count_shared_rooms</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='MexCityclean.csv' datatype='table' name='[__tableau_internal_object_id__].[MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2]' role='measure' type='quantitative' />
+      <column caption='Accommodates' datatype='integer' name='[accommodates]' role='measure' type='quantitative' />
+      <column caption='Ame1' datatype='string' name='[ame1]' role='dimension' type='nominal' />
+      <column caption='Ame2' datatype='string' name='[ame2]' role='dimension' type='nominal' />
+      <column caption='Ame3' datatype='string' name='[ame3]' role='dimension' type='nominal' />
+      <column caption='Ame4' datatype='string' name='[ame4]' role='dimension' type='nominal' />
+      <column caption='Ame5' datatype='string' name='[ame5]' role='dimension' type='nominal' />
+      <column caption='Bathrooms Text' datatype='string' name='[bathrooms_text]' role='dimension' type='nominal' />
+      <column caption='Bedrooms' datatype='real' name='[bedrooms]' role='measure' type='quantitative' />
+      <column caption='Beds' datatype='real' name='[beds]' role='measure' type='quantitative' />
+      <column caption='Calculated Host Listings Count' datatype='integer' name='[calculated_host_listings_count]' role='measure' type='quantitative' />
+      <column caption='Calculated Host Listings Count Entire Homes' datatype='integer' name='[calculated_host_listings_count_entire_homes]' role='measure' type='quantitative' />
+      <column caption='Calculated Host Listings Count Private Rooms' datatype='integer' name='[calculated_host_listings_count_private_rooms]' role='measure' type='quantitative' />
+      <column caption='Calculated Host Listings Count Shared Rooms' datatype='integer' name='[calculated_host_listings_count_shared_rooms]' role='measure' type='quantitative' />
+      <column caption='Host Acceptance Rate' datatype='string' name='[host_acceptance_rate]' role='dimension' type='nominal' />
+      <column caption='Host Id' datatype='integer' name='[host_id]' role='dimension' type='ordinal' />
+      <column caption='Host Identity Verified' datatype='integer' name='[host_identity_verified]' role='measure' type='quantitative' />
+      <column caption='Host Is Superhost' datatype='integer' name='[host_is_superhost]' role='measure' type='quantitative' />
+      <column caption='Host Listings Count' datatype='integer' name='[host_listings_count]' role='measure' type='quantitative' />
+      <column caption='Host Response Rate' datatype='string' name='[host_response_rate]' role='dimension' type='nominal' />
+      <column caption='Host Response Time' datatype='string' name='[host_response_time]' role='dimension' type='nominal' />
+      <column caption='Host Total Listings Count' datatype='integer' name='[host_total_listings_count]' role='measure' type='quantitative' />
+      <column caption='Instant Bookable' datatype='integer' name='[instant_bookable]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Maximum Nights' datatype='integer' name='[maximum_nights]' role='measure' type='quantitative' />
+      <column caption='Minimum Nights' datatype='integer' name='[minimum_nights]' role='measure' type='quantitative' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+      <column caption='Neighbourhood Cleansed' datatype='string' name='[neighbourhood_cleansed]' role='dimension' type='nominal' />
+      <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+      <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+      <column caption='Property Type' datatype='string' name='[property_type]' role='dimension' type='nominal' />
+      <column caption='Review Scores Accuracy' datatype='real' name='[review_scores_accuracy]' role='measure' type='quantitative' />
+      <column caption='Review Scores Checkin' datatype='real' name='[review_scores_checkin]' role='measure' type='quantitative' />
+      <column caption='Review Scores Cleanliness' datatype='real' name='[review_scores_cleanliness]' role='measure' type='quantitative' />
+      <column caption='Review Scores Communication' datatype='real' name='[review_scores_communication]' role='measure' type='quantitative' />
+      <column caption='Review Scores Location' datatype='real' name='[review_scores_location]' role='measure' type='quantitative' />
+      <column caption='Review Scores Rating' datatype='real' name='[review_scores_rating]' role='measure' type='quantitative' />
+      <column caption='Review Scores Value' datatype='real' name='[review_scores_value]' role='measure' type='quantitative' />
+      <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+      <column caption='Source' datatype='string' name='[source]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Estados Unidos Mexicanos&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='MexCityclean.csv' id='MexCityclean.csv_9692E030738144BEB0D3212B3BA453D2'>
+            <properties context=''>
+              <relation connection='textscan.1timizv04y8w7v12klmb31976aym' name='MexCityclean.csv' table='[MexCityclean#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='source' ordinal='1' />
+                  <column datatype='string' name='name' ordinal='2' />
+                  <column datatype='integer' name='host_id' ordinal='3' />
+                  <column datatype='string' name='host_response_time' ordinal='4' />
+                  <column datatype='string' name='host_response_rate' ordinal='5' />
+                  <column datatype='string' name='host_acceptance_rate' ordinal='6' />
+                  <column datatype='integer' name='host_is_superhost' ordinal='7' />
+                  <column datatype='integer' name='host_listings_count' ordinal='8' />
+                  <column datatype='integer' name='host_total_listings_count' ordinal='9' />
+                  <column datatype='integer' name='host_identity_verified' ordinal='10' />
+                  <column datatype='string' name='neighbourhood' ordinal='11' />
+                  <column datatype='string' name='neighbourhood_cleansed' ordinal='12' />
+                  <column datatype='real' name='latitude' ordinal='13' />
+                  <column datatype='real' name='longitude' ordinal='14' />
+                  <column datatype='string' name='property_type' ordinal='15' />
+                  <column datatype='string' name='room_type' ordinal='16' />
+                  <column datatype='integer' name='accommodates' ordinal='17' />
+                  <column datatype='string' name='bathrooms_text' ordinal='18' />
+                  <column datatype='real' name='bedrooms' ordinal='19' />
+                  <column datatype='real' name='beds' ordinal='20' />
+                  <column datatype='string' name='ame1' ordinal='21' />
+                  <column datatype='string' name='ame2' ordinal='22' />
+                  <column datatype='string' name='ame3' ordinal='23' />
+                  <column datatype='string' name='ame4' ordinal='24' />
+                  <column datatype='string' name='ame5' ordinal='25' />
+                  <column datatype='integer' name='price' ordinal='26' />
+                  <column datatype='integer' name='minimum_nights' ordinal='27' />
+                  <column datatype='integer' name='maximum_nights' ordinal='28' />
+                  <column datatype='integer' name='number_of_reviews' ordinal='29' />
+                  <column datatype='real' name='review_scores_rating' ordinal='30' />
+                  <column datatype='real' name='review_scores_accuracy' ordinal='31' />
+                  <column datatype='real' name='review_scores_cleanliness' ordinal='32' />
+                  <column datatype='real' name='review_scores_checkin' ordinal='33' />
+                  <column datatype='real' name='review_scores_communication' ordinal='34' />
+                  <column datatype='real' name='review_scores_location' ordinal='35' />
+                  <column datatype='real' name='review_scores_value' ordinal='36' />
+                  <column datatype='integer' name='instant_bookable' ordinal='37' />
+                  <column datatype='integer' name='calculated_host_listings_count' ordinal='38' />
+                  <column datatype='integer' name='calculated_host_listings_count_entire_homes' ordinal='39' />
+                  <column datatype='integer' name='calculated_host_listings_count_private_rooms' ordinal='40' />
+                  <column datatype='integer' name='calculated_host_listings_count_shared_rooms' ordinal='41' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Hoja 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='RioClean (2)' name='federated.0o17j1n171tmkz101dsua04j9km5' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0o17j1n171tmkz101dsua04j9km5'>
+            <column-instance column='[latitude]' derivation='Avg' name='[avg:latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[longitude]' derivation='Avg' name='[avg:longitude:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0o17j1n171tmkz101dsua04j9km5].[avg:longitude:qk]' field-type='quantitative' max='-4271552.8199549913' min='-5409293.5466009835' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0o17j1n171tmkz101dsua04j9km5].[avg:latitude:qk]' field-type='quantitative' max='-2330230.2843737258' min='-2894727.7906979234' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0o17j1n171tmkz101dsua04j9km5].[avg:latitude:qk]</rows>
+        <cols>[federated.0o17j1n171tmkz101dsua04j9km5].[avg:longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{4FE36E78-9886-476F-B8D8-B67487CFF0DB}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' maximized='true' name='Hoja 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E34EF566-D810-4ADD-8D95-9BD26945BB07}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Hoja 3' width='192'>
+      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
+      YII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
